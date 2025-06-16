@@ -71,12 +71,12 @@ hata_payi = 0.1
 gerekli_ornek_sayisi = math.ceil((z90 * sapma / hata_payi) ** 2)
 print("\n±0.1 hata payı ile, %90 güven düzeyinde gereken örneklem sayısı:", gerekli_ornek_sayisi)
 
-# 8. Grafikler (senin gönderdiğin gibi seaborn'lu)
+# 8. Grafikler 
 yillar_df = pd.Series(yillar)
 
 plt.figure(figsize=(14, 6))
 
-# Histogram (seaborn + kde)
+# Histogram 
 plt.subplot(1, 2, 1)
 sns.histplot(yillar_df, bins=30, kde=True, color='skyblue', edgecolor='black')
 plt.title("Yayın Yılı Dağılımı (Histogram)")
