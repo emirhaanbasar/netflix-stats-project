@@ -77,7 +77,7 @@ yillar_df = pd.Series(yillar)
 
 plt.figure(figsize=(14, 6))
 
-# Histogram (seaborn + kde)
+# Histogram 
 plt.subplot(1, 2, 1)
 sns.histplot(yillar_df, bins=30, kde=True, color='skyblue', edgecolor='black')
 plt.title("Yayın Yılı Dağılımı (Histogram)")
